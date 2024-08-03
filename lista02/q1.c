@@ -355,27 +355,5 @@ int main (){
     limparLista(&lista);
 
 
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     return 0;
 }
