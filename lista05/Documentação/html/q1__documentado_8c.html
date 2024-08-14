@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Implementando fila em Array: Referência ao ficheiro q1_documentado.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Implementando fila em Array<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Um banco fictício que implementa a estrutura de fila em um array</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Estruturas de Dados</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro q1_documentado.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Estruturas de Dados</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_cliente.html">Cliente</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estrutura que representa um cliente no sistema.  <a href="struct_cliente.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fila.html">Fila</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estrutura que representa uma fila de clientes.  <a href="struct_fila.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a51a754992e423c96dda6e87de6db5234" id="r_a51a754992e423c96dda6e87de6db5234"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51a754992e423c96dda6e87de6db5234">configurarFila</a> (<a class="el" href="struct_fila.html">Fila</a> *fila)</td></tr>
+<tr class="memdesc:a51a754992e423c96dda6e87de6db5234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa a fila com o tamanho máximo especificado.  <br /></td></tr>
+<tr class="separator:a51a754992e423c96dda6e87de6db5234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b5cbdc91bdd98006d0c919208026b6" id="r_ac5b5cbdc91bdd98006d0c919208026b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5b5cbdc91bdd98006d0c919208026b6">filaVazia</a> (<a class="el" href="struct_fila.html">Fila</a> *fila)</td></tr>
+<tr class="memdesc:ac5b5cbdc91bdd98006d0c919208026b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a fila está vazia.  <br /></td></tr>
+<tr class="separator:ac5b5cbdc91bdd98006d0c919208026b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733a3dbba543bfb95cdfe0a46464677b" id="r_a733a3dbba543bfb95cdfe0a46464677b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a733a3dbba543bfb95cdfe0a46464677b">filaCheia</a> (<a class="el" href="struct_fila.html">Fila</a> *fila)</td></tr>
+<tr class="memdesc:a733a3dbba543bfb95cdfe0a46464677b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a fila está cheia.  <br /></td></tr>
+<tr class="separator:a733a3dbba543bfb95cdfe0a46464677b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c376637d5ca64aeb00ac6d408cdd14b" id="r_a0c376637d5ca64aeb00ac6d408cdd14b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c376637d5ca64aeb00ac6d408cdd14b">inserirCliente</a> (<a class="el" href="struct_fila.html">Fila</a> *fila, <a class="el" href="struct_cliente.html">Cliente</a> cliente)</td></tr>
+<tr class="memdesc:a0c376637d5ca64aeb00ac6d408cdd14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um cliente na fila.  <br /></td></tr>
+<tr class="separator:a0c376637d5ca64aeb00ac6d408cdd14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4698a20a75c4b7fd7c7a43b7342440b1" id="r_a4698a20a75c4b7fd7c7a43b7342440b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4698a20a75c4b7fd7c7a43b7342440b1">removerCliente</a> (<a class="el" href="struct_fila.html">Fila</a> *fila, <a class="el" href="struct_cliente.html">Cliente</a> *cliente)</td></tr>
+<tr class="memdesc:a4698a20a75c4b7fd7c7a43b7342440b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove um cliente da fila.  <br /></td></tr>
+<tr class="separator:a4698a20a75c4b7fd7c7a43b7342440b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20257b45a4784b0123e3ba1e336dadfa" id="r_a20257b45a4784b0123e3ba1e336dadfa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20257b45a4784b0123e3ba1e336dadfa">criarCliente</a> (<a class="el" href="struct_cliente.html">Cliente</a> *cliente, char nome[], int cod, int tempoDeAtendimento)</td></tr>
+<tr class="memdesc:a20257b45a4784b0123e3ba1e336dadfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria um cliente com as informações fornecidas.  <br /></td></tr>
+<tr class="separator:a20257b45a4784b0123e3ba1e336dadfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26dc126dac89e6d6f7822bcd9119400a" id="r_a26dc126dac89e6d6f7822bcd9119400a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26dc126dac89e6d6f7822bcd9119400a">imprimirCliente</a> (<a class="el" href="struct_cliente.html">Cliente</a> cliente)</td></tr>
+<tr class="memdesc:a26dc126dac89e6d6f7822bcd9119400a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime as informações de um cliente.  <br /></td></tr>
+<tr class="separator:a26dc126dac89e6d6f7822bcd9119400a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74719ec6615fa8e2f293fcad89a5f8e3" id="r_a74719ec6615fa8e2f293fcad89a5f8e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74719ec6615fa8e2f293fcad89a5f8e3">imprimirFila</a> (<a class="el" href="struct_fila.html">Fila</a> *fila)</td></tr>
+<tr class="memdesc:a74719ec6615fa8e2f293fcad89a5f8e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime a fila de clientes.  <br /></td></tr>
+<tr class="separator:a74719ec6615fa8e2f293fcad89a5f8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função principal do programa.  <br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a11df40282f66641fdd5d139a3b454ec2" id="r_a11df40282f66641fdd5d139a3b454ec2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11df40282f66641fdd5d139a3b454ec2">MAX_FILA</a> = 10</td></tr>
+<tr class="memdesc:a11df40282f66641fdd5d139a3b454ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tamanho máximo da fila de clientes.  <br /></td></tr>
+<tr class="separator:a11df40282f66641fdd5d139a3b454ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93507e5bea501a870947a21231a300a8" id="r_a93507e5bea501a870947a21231a300a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93507e5bea501a870947a21231a300a8">TEMPO_ATENDIMENTO</a> = 10</td></tr>
+<tr class="memdesc:a93507e5bea501a870947a21231a300a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tempo padrão de atendimento para cada cliente (em minutos).  <br /></td></tr>
+<tr class="separator:a93507e5bea501a870947a21231a300a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a51a754992e423c96dda6e87de6db5234" name="a51a754992e423c96dda6e87de6db5234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51a754992e423c96dda6e87de6db5234">&#9670;&#160;</a></span>configurarFila()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int configurarFila </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila.html">Fila</a> *</td>          <td class="paramname"><span class="paramname"><em>fila</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa a fila com o tamanho máximo especificado. </p>
+<p>Aloca memória para a fila e inicializa os índices de início, fim e tamanho.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fila</td><td>Ponteiro para a fila que será inicializada. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>1 se a fila for configurada com sucesso, 0 caso contrário. </dd></dl>
+
+</div>
+</div>
+<a id="a20257b45a4784b0123e3ba1e336dadfa" name="a20257b45a4784b0123e3ba1e336dadfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20257b45a4784b0123e3ba1e336dadfa">&#9670;&#160;</a></span>criarCliente()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int criarCliente </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_cliente.html">Cliente</a> *</td>          <td class="paramname"><span class="paramname"><em>cliente</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>cod</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tempoDeAtendimento</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cria um cliente com as informações fornecidas. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cliente</td><td>Ponteiro para o cliente que será criado. </td></tr>
+    <tr><td class="paramname">nome</td><td>Nome do cliente. </td></tr>
+    <tr><td class="paramname">cod</td><td>Código de identificação do cliente. </td></tr>
+    <tr><td class="paramname">tempoDeAtendimento</td><td>Tempo necessário para atender o cliente (em minutos). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>1 se o cliente for criado com sucesso, 0 caso contrário. </dd></dl>
+
+</div>
+</div>
+<a id="a733a3dbba543bfb95cdfe0a46464677b" name="a733a3dbba543bfb95cdfe0a46464677b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733a3dbba543bfb95cdfe0a46464677b">&#9670;&#160;</a></span>filaCheia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int filaCheia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila.html">Fila</a> *</td>          <td class="paramname"><span class="paramname"><em>fila</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a fila está cheia. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fila</td><td>Ponteiro para a fila. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>1 se a fila estiver cheia, 0 caso contrário. </dd></dl>
+
+</div>
+</div>
+<a id="ac5b5cbdc91bdd98006d0c919208026b6" name="ac5b5cbdc91bdd98006d0c919208026b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b5cbdc91bdd98006d0c919208026b6">&#9670;&#160;</a></span>filaVazia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int filaVazia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila.html">Fila</a> *</td>          <td class="paramname"><span class="paramname"><em>fila</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a fila está vazia. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fila</td><td>Ponteiro para a fila. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>1 se a fila estiver vazia, 0 caso contrário. </dd></dl>
+
+</div>
+</div>
+<a id="a26dc126dac89e6d6f7822bcd9119400a" name="a26dc126dac89e6d6f7822bcd9119400a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26dc126dac89e6d6f7822bcd9119400a">&#9670;&#160;</a></span>imprimirCliente()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imprimirCliente </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_cliente.html">Cliente</a></td>          <td class="paramname"><span class="paramname"><em>cliente</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imprime as informações de um cliente. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cliente</td><td>O cliente cujas informações serão impressas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a74719ec6615fa8e2f293fcad89a5f8e3" name="a74719ec6615fa8e2f293fcad89a5f8e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74719ec6615fa8e2f293fcad89a5f8e3">&#9670;&#160;</a></span>imprimirFila()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imprimirFila </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila.html">Fila</a> *</td>          <td class="paramname"><span class="paramname"><em>fila</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imprime a fila de clientes. </p>
+<p>Exibe a lista de clientes na fila, mostrando o tempo de atendimento restante para cada cliente.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fila</td><td>Ponteiro para a fila. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0c376637d5ca64aeb00ac6d408cdd14b" name="a0c376637d5ca64aeb00ac6d408cdd14b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c376637d5ca64aeb00ac6d408cdd14b">&#9670;&#160;</a></span>inserirCliente()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int inserirCliente </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila.html">Fila</a> *</td>          <td class="paramname"><span class="paramname"><em>fila</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_cliente.html">Cliente</a></td>          <td class="paramname"><span class="paramname"><em>cliente</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere um cliente na fila. </p>
+<p>Se a fila não estiver cheia, o cliente é adicionado ao final da fila.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fila</td><td>Ponteiro para a fila. </td></tr>
+    <tr><td class="paramname">cliente</td><td><a class="el" href="struct_cliente.html" title="Estrutura que representa um cliente no sistema.">Cliente</a> a ser inserido na fila. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>1 se o cliente for inserido com sucesso, 0 se a fila estiver cheia. </dd></dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função principal do programa. </p>
+<p>O programa inicializa a fila, solicita a entrada do usuário e simula o atendimento dos clientes.</p>
+<dl class="section return"><dt>Retorna</dt><dd>0 se o programa for executado com sucesso, 1 caso contrário. </dd></dl>
+
+</div>
+</div>
+<a id="a4698a20a75c4b7fd7c7a43b7342440b1" name="a4698a20a75c4b7fd7c7a43b7342440b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4698a20a75c4b7fd7c7a43b7342440b1">&#9670;&#160;</a></span>removerCliente()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int removerCliente </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila.html">Fila</a> *</td>          <td class="paramname"><span class="paramname"><em>fila</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_cliente.html">Cliente</a> *</td>          <td class="paramname"><span class="paramname"><em>cliente</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove um cliente da fila. </p>
+<p>O cliente no início da fila é removido e o próximo cliente, se houver, ocupa seu lugar.</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fila</td><td>Ponteiro para a fila. </td></tr>
+    <tr><td class="paramname">cliente</td><td>Ponteiro para o cliente removido. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>1 se o cliente for removido com sucesso, 0 se a fila estiver vazia. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das variáveis</h2>
+<a id="a11df40282f66641fdd5d139a3b454ec2" name="a11df40282f66641fdd5d139a3b454ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11df40282f66641fdd5d139a3b454ec2">&#9670;&#160;</a></span>MAX_FILA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MAX_FILA = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tamanho máximo da fila de clientes. </p>
+
+</div>
+</div>
+<a id="a93507e5bea501a870947a21231a300a8" name="a93507e5bea501a870947a21231a300a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93507e5bea501a870947a21231a300a8">&#9670;&#160;</a></span>TEMPO_ATENDIMENTO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TEMPO_ATENDIMENTO = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tempo padrão de atendimento para cada cliente (em minutos). </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

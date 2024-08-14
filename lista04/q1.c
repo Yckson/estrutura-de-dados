@@ -1,3 +1,7 @@
+//ALUNO: WILLIAM GABRIEL YCKSON ARAÚJO BRAGA
+//MATRÍCULA: 202300084281
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

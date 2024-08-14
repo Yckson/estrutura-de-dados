@@ -1,0 +1,237 @@
+\doxysection{Referência ao ficheiro q1\+\_\+documentado.\+c}
+\hypertarget{q1__documentado_8c}{}\label{q1__documentado_8c}\index{q1\_documentado.c@{q1\_documentado.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsubsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_cliente}{Cliente}}
+\begin{DoxyCompactList}\small\item\em Estrutura que representa um cliente no sistema. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_fila}{Fila}}
+\begin{DoxyCompactList}\small\item\em Estrutura que representa uma fila de clientes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{q1__documentado_8c_a51a754992e423c96dda6e87de6db5234}{configurar\+Fila}} (\mbox{\hyperlink{struct_fila}{Fila}} \texorpdfstring{$\ast$}{*}fila)
+\begin{DoxyCompactList}\small\item\em Inicializa a fila com o tamanho máximo especificado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{q1__documentado_8c_ac5b5cbdc91bdd98006d0c919208026b6}{fila\+Vazia}} (\mbox{\hyperlink{struct_fila}{Fila}} \texorpdfstring{$\ast$}{*}fila)
+\begin{DoxyCompactList}\small\item\em Verifica se a fila está vazia. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{q1__documentado_8c_a733a3dbba543bfb95cdfe0a46464677b}{fila\+Cheia}} (\mbox{\hyperlink{struct_fila}{Fila}} \texorpdfstring{$\ast$}{*}fila)
+\begin{DoxyCompactList}\small\item\em Verifica se a fila está cheia. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{q1__documentado_8c_a0c376637d5ca64aeb00ac6d408cdd14b}{inserir\+Cliente}} (\mbox{\hyperlink{struct_fila}{Fila}} \texorpdfstring{$\ast$}{*}fila, \mbox{\hyperlink{struct_cliente}{Cliente}} cliente)
+\begin{DoxyCompactList}\small\item\em Insere um cliente na fila. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{q1__documentado_8c_a4698a20a75c4b7fd7c7a43b7342440b1}{remover\+Cliente}} (\mbox{\hyperlink{struct_fila}{Fila}} \texorpdfstring{$\ast$}{*}fila, \mbox{\hyperlink{struct_cliente}{Cliente}} \texorpdfstring{$\ast$}{*}cliente)
+\begin{DoxyCompactList}\small\item\em Remove um cliente da fila. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{q1__documentado_8c_a20257b45a4784b0123e3ba1e336dadfa}{criar\+Cliente}} (\mbox{\hyperlink{struct_cliente}{Cliente}} \texorpdfstring{$\ast$}{*}cliente, char nome\mbox{[}$\,$\mbox{]}, int cod, int tempo\+De\+Atendimento)
+\begin{DoxyCompactList}\small\item\em Cria um cliente com as informações fornecidas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{q1__documentado_8c_a26dc126dac89e6d6f7822bcd9119400a}{imprimir\+Cliente}} (\mbox{\hyperlink{struct_cliente}{Cliente}} cliente)
+\begin{DoxyCompactList}\small\item\em Imprime as informações de um cliente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{q1__documentado_8c_a74719ec6615fa8e2f293fcad89a5f8e3}{imprimir\+Fila}} (\mbox{\hyperlink{struct_fila}{Fila}} \texorpdfstring{$\ast$}{*}fila)
+\begin{DoxyCompactList}\small\item\em Imprime a fila de clientes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{q1__documentado_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Função principal do programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variáveis}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{q1__documentado_8c_a11df40282f66641fdd5d139a3b454ec2}{MAX\+\_\+\+FILA}} = 10
+\begin{DoxyCompactList}\small\item\em Tamanho máximo da fila de clientes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{q1__documentado_8c_a93507e5bea501a870947a21231a300a8}{TEMPO\+\_\+\+ATENDIMENTO}} = 10
+\begin{DoxyCompactList}\small\item\em Tempo padrão de atendimento para cada cliente (em minutos). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{q1__documentado_8c_a51a754992e423c96dda6e87de6db5234}\index{q1\_documentado.c@{q1\_documentado.c}!configurarFila@{configurarFila}}
+\index{configurarFila@{configurarFila}!q1\_documentado.c@{q1\_documentado.c}}
+\doxysubsubsection{\texorpdfstring{configurarFila()}{configurarFila()}}
+{\footnotesize\ttfamily \label{q1__documentado_8c_a51a754992e423c96dda6e87de6db5234} 
+int configurar\+Fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_fila}{Fila}} \texorpdfstring{$\ast$}{*}}]{fila}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa a fila com o tamanho máximo especificado. 
+
+Aloca memória para a fila e inicializa os índices de início, fim e tamanho.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em fila} & Ponteiro para a fila que será inicializada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 se a fila for configurada com sucesso, 0 caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{q1__documentado_8c_a20257b45a4784b0123e3ba1e336dadfa}\index{q1\_documentado.c@{q1\_documentado.c}!criarCliente@{criarCliente}}
+\index{criarCliente@{criarCliente}!q1\_documentado.c@{q1\_documentado.c}}
+\doxysubsubsection{\texorpdfstring{criarCliente()}{criarCliente()}}
+{\footnotesize\ttfamily \label{q1__documentado_8c_a20257b45a4784b0123e3ba1e336dadfa} 
+int criar\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cliente}{Cliente}} \texorpdfstring{$\ast$}{*}}]{cliente}{, }\item[{char}]{nome}{\mbox{[}$\,$\mbox{]}, }\item[{int}]{cod}{, }\item[{int}]{tempo\+De\+Atendimento}{}\end{DoxyParamCaption})}
+
+
+
+Cria um cliente com as informações fornecidas. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em cliente} & Ponteiro para o cliente que será criado. \\
+\hline
+{\em nome} & Nome do cliente. \\
+\hline
+{\em cod} & Código de identificação do cliente. \\
+\hline
+{\em tempo\+De\+Atendimento} & Tempo necessário para atender o cliente (em minutos). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 se o cliente for criado com sucesso, 0 caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{q1__documentado_8c_a733a3dbba543bfb95cdfe0a46464677b}\index{q1\_documentado.c@{q1\_documentado.c}!filaCheia@{filaCheia}}
+\index{filaCheia@{filaCheia}!q1\_documentado.c@{q1\_documentado.c}}
+\doxysubsubsection{\texorpdfstring{filaCheia()}{filaCheia()}}
+{\footnotesize\ttfamily \label{q1__documentado_8c_a733a3dbba543bfb95cdfe0a46464677b} 
+int fila\+Cheia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_fila}{Fila}} \texorpdfstring{$\ast$}{*}}]{fila}{}\end{DoxyParamCaption})}
+
+
+
+Verifica se a fila está cheia. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em fila} & Ponteiro para a fila. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 se a fila estiver cheia, 0 caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{q1__documentado_8c_ac5b5cbdc91bdd98006d0c919208026b6}\index{q1\_documentado.c@{q1\_documentado.c}!filaVazia@{filaVazia}}
+\index{filaVazia@{filaVazia}!q1\_documentado.c@{q1\_documentado.c}}
+\doxysubsubsection{\texorpdfstring{filaVazia()}{filaVazia()}}
+{\footnotesize\ttfamily \label{q1__documentado_8c_ac5b5cbdc91bdd98006d0c919208026b6} 
+int fila\+Vazia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_fila}{Fila}} \texorpdfstring{$\ast$}{*}}]{fila}{}\end{DoxyParamCaption})}
+
+
+
+Verifica se a fila está vazia. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em fila} & Ponteiro para a fila. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 se a fila estiver vazia, 0 caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{q1__documentado_8c_a26dc126dac89e6d6f7822bcd9119400a}\index{q1\_documentado.c@{q1\_documentado.c}!imprimirCliente@{imprimirCliente}}
+\index{imprimirCliente@{imprimirCliente}!q1\_documentado.c@{q1\_documentado.c}}
+\doxysubsubsection{\texorpdfstring{imprimirCliente()}{imprimirCliente()}}
+{\footnotesize\ttfamily \label{q1__documentado_8c_a26dc126dac89e6d6f7822bcd9119400a} 
+void imprimir\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cliente}{Cliente}}}]{cliente}{}\end{DoxyParamCaption})}
+
+
+
+Imprime as informações de um cliente. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em cliente} & O cliente cujas informações serão impressas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{q1__documentado_8c_a74719ec6615fa8e2f293fcad89a5f8e3}\index{q1\_documentado.c@{q1\_documentado.c}!imprimirFila@{imprimirFila}}
+\index{imprimirFila@{imprimirFila}!q1\_documentado.c@{q1\_documentado.c}}
+\doxysubsubsection{\texorpdfstring{imprimirFila()}{imprimirFila()}}
+{\footnotesize\ttfamily \label{q1__documentado_8c_a74719ec6615fa8e2f293fcad89a5f8e3} 
+void imprimir\+Fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_fila}{Fila}} \texorpdfstring{$\ast$}{*}}]{fila}{}\end{DoxyParamCaption})}
+
+
+
+Imprime a fila de clientes. 
+
+Exibe a lista de clientes na fila, mostrando o tempo de atendimento restante para cada cliente.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em fila} & Ponteiro para a fila. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{q1__documentado_8c_a0c376637d5ca64aeb00ac6d408cdd14b}\index{q1\_documentado.c@{q1\_documentado.c}!inserirCliente@{inserirCliente}}
+\index{inserirCliente@{inserirCliente}!q1\_documentado.c@{q1\_documentado.c}}
+\doxysubsubsection{\texorpdfstring{inserirCliente()}{inserirCliente()}}
+{\footnotesize\ttfamily \label{q1__documentado_8c_a0c376637d5ca64aeb00ac6d408cdd14b} 
+int inserir\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_fila}{Fila}} \texorpdfstring{$\ast$}{*}}]{fila}{, }\item[{\mbox{\hyperlink{struct_cliente}{Cliente}}}]{cliente}{}\end{DoxyParamCaption})}
+
+
+
+Insere um cliente na fila. 
+
+Se a fila não estiver cheia, o cliente é adicionado ao final da fila.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em fila} & Ponteiro para a fila. \\
+\hline
+{\em cliente} & \doxylink{struct_cliente}{Cliente} a ser inserido na fila. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 se o cliente for inserido com sucesso, 0 se a fila estiver cheia. 
+\end{DoxyReturn}
+\Hypertarget{q1__documentado_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{q1\_documentado.c@{q1\_documentado.c}!main@{main}}
+\index{main@{main}!q1\_documentado.c@{q1\_documentado.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{q1__documentado_8c_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Função principal do programa. 
+
+O programa inicializa a fila, solicita a entrada do usuário e simula o atendimento dos clientes.
+
+\begin{DoxyReturn}{Retorna}
+0 se o programa for executado com sucesso, 1 caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{q1__documentado_8c_a4698a20a75c4b7fd7c7a43b7342440b1}\index{q1\_documentado.c@{q1\_documentado.c}!removerCliente@{removerCliente}}
+\index{removerCliente@{removerCliente}!q1\_documentado.c@{q1\_documentado.c}}
+\doxysubsubsection{\texorpdfstring{removerCliente()}{removerCliente()}}
+{\footnotesize\ttfamily \label{q1__documentado_8c_a4698a20a75c4b7fd7c7a43b7342440b1} 
+int remover\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_fila}{Fila}} \texorpdfstring{$\ast$}{*}}]{fila}{, }\item[{\mbox{\hyperlink{struct_cliente}{Cliente}} \texorpdfstring{$\ast$}{*}}]{cliente}{}\end{DoxyParamCaption})}
+
+
+
+Remove um cliente da fila. 
+
+O cliente no início da fila é removido e o próximo cliente, se houver, ocupa seu lugar.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em fila} & Ponteiro para a fila. \\
+\hline
+{\em cliente} & Ponteiro para o cliente removido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 se o cliente for removido com sucesso, 0 se a fila estiver vazia. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentação das variáveis}
+\Hypertarget{q1__documentado_8c_a11df40282f66641fdd5d139a3b454ec2}\index{q1\_documentado.c@{q1\_documentado.c}!MAX\_FILA@{MAX\_FILA}}
+\index{MAX\_FILA@{MAX\_FILA}!q1\_documentado.c@{q1\_documentado.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_FILA}{MAX\_FILA}}
+{\footnotesize\ttfamily \label{q1__documentado_8c_a11df40282f66641fdd5d139a3b454ec2} 
+int MAX\+\_\+\+FILA = 10}
+
+
+
+Tamanho máximo da fila de clientes. 
+
+\Hypertarget{q1__documentado_8c_a93507e5bea501a870947a21231a300a8}\index{q1\_documentado.c@{q1\_documentado.c}!TEMPO\_ATENDIMENTO@{TEMPO\_ATENDIMENTO}}
+\index{TEMPO\_ATENDIMENTO@{TEMPO\_ATENDIMENTO}!q1\_documentado.c@{q1\_documentado.c}}
+\doxysubsubsection{\texorpdfstring{TEMPO\_ATENDIMENTO}{TEMPO\_ATENDIMENTO}}
+{\footnotesize\ttfamily \label{q1__documentado_8c_a93507e5bea501a870947a21231a300a8} 
+int TEMPO\+\_\+\+ATENDIMENTO = 10}
+
+
+
+Tempo padrão de atendimento para cada cliente (em minutos). 
+
